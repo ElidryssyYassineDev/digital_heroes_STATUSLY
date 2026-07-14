@@ -1,0 +1,13 @@
+// Prisma schema for Statusly.
+// Models land in M2 (Better Auth core + organization tables) and M3
+// (Service / Incident / IncidentUpdate). This file is intentionally just
+// the scaffold for now.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
